@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+<menu>
+<add id="Bzphua_Stockstatus::productsgrid_list" title="Stock Status" translate="title" module="Bzphua_Stockstatus" sortOrder="999" parent="Magento_Catalog::inventory" dependsOnModule="Bzphua_Stockstatus" action="stockstatus/productsgrid" resource="Bzphua_Stockstatus::productsgrid"/>
+</menu>
+</config>
+
