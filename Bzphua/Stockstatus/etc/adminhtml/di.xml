@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Catalog\Ui\DataProvider\Product\ProductDataProvider">
+		<arguments>
+			<argument name="addFieldStrategies" xsi:type="array">
+				<item name="quantity_pending" xsi:type="object">Bzphua\Stockstatus\Ui\DataProvider\Product\AddQuantityPendingFieldToCollection</item>
+			</argument>
+			<argument name="addFieldStrategies" xsi:type="array">
+				<item name="quantity_processing" xsi:type="object">Bzphua\Stockstatus\Ui\DataProvider\Product\AddQuantityProcessingFieldToCollection</item>
+			</argument>
+			<argument name="addFieldStrategies" xsi:type="array">
+				<item name="quantity_available" xsi:type="object">Bzphua\Stockstatus\Ui\DataProvider\Product\AddQuantityAvailableFieldToCollection</item>
+			</argument>
+            <argument name="addFilterStrategies" xsi:type="array">
+                <item name="quantity_pending" xsi:type="object">Bzphua\Stockstatus\Ui\DataProvider\Product\AddQuantityPendingFilterToCollection</item>
+            </argument>
+            <argument name="addFilterStrategies" xsi:type="array">
+                <item name="quantity_processing" xsi:type="object">Bzphua\Stockstatus\Ui\DataProvider\Product\AddQuantityProcessingFilterToCollection</item>
+            </argument>
+            <argument name="addFilterStrategies" xsi:type="array">
+                <item name="quantity_available" xsi:type="object">Bzphua\Stockstatus\Ui\DataProvider\Product\AddQuantityAvailableFilterToCollection</item>
+            </argument>
+		</arguments>
+	</type>
+</config>
